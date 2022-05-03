@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid Wagner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/4d8bb8d699.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>IW05</div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/ingridwagner/" target="_blank"><img src="./linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://github.com/Dindinha" target="_blank"><img src="./github.png" alt="github"></a></li>
+            <li><a href="mailto:indynha.w@gmail.com" target="_blank"><img src="./email.png" alt="email"></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ingrid Wagner</h1>
+                <h2>Fullstack Developer</h2>
+            </div>
+            <div id="arrow" onclick="displayAbout()">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam magni reprehenderit fugiat. Debitis, praesentium cupiditate quasi dignissimos numquam iste tempora tempore, consequatur doloremque maxime sint, alias iure optio quam eius.</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato:</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+        <p></p>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
