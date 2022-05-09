@@ -46,15 +46,28 @@ header {
         ) 1;
 }
 
-header img {
-    width: 24px;
+#logo {
+    padding: 2px 8px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 4px;
+}
+
+svg {
+    height: 40px;
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: 300ms;
+}
+
+svg:hover {
+    stroke: #ffcc23;
 }
 
 header ul {
     display: flex;
     gap: 24px;
 
-    height: 24px;
+    height: 40px;
 }
 
 header ul li a {
