@@ -113,6 +113,7 @@ header ul li a:hover {
 #about p {
     max-width: 600px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 .form {
