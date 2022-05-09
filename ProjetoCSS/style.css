@@ -34,8 +34,8 @@ header {
     justify-content: space-around;
     align-items: center;
     
-    background-color: rgba(0, 0, 0, 0.514);
     padding: 8px;
+    background-color: rgba(0, 0, 0, 0.514);
     margin-bottom: 48px;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(
@@ -47,15 +47,15 @@ header {
 }
 
 #logo {
-    padding: 2px 8px;
+    padding: 8px 16px;
     border: 1px solid rgb(148, 148, 148);
     border-radius: 4px;
 }
 
 svg {
+    display: block;
     height: 40px;
-    stroke: #fff;
-    stroke-width: 2px;
+    stroke: #ddd;
     transition: 300ms;
 }
 
@@ -63,19 +63,13 @@ svg:hover {
     stroke: #ffcc23;
 }
 
+svg path {
+    
+}
+
 header ul {
     display: flex;
     gap: 24px;
-
-    height: 40px;
-}
-
-header ul li a {
-    transition: 300ms;
-}
-
-header ul li a:hover {
-    color: var(--hover);
 }
 
 .container {
@@ -84,7 +78,6 @@ header ul li a:hover {
 
 .container .name h1 {
     font-size: 3rem;
-    font-weight: 700;
 }
 
 .container .name h2 {
@@ -114,6 +107,7 @@ header ul li a:hover {
     max-width: 600px;
     margin: 0 auto;
     text-align: justify;
+    text-indent: 40px;
 }
 
 .form {
