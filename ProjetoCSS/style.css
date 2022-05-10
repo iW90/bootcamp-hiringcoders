@@ -50,21 +50,18 @@ header {
     padding: 8px 16px;
     border: 1px solid rgb(148, 148, 148);
     border-radius: 4px;
+    color: #ffcc23;
 }
 
-svg {
+header svg {
     display: block;
     height: 40px;
     stroke: #ddd;
     transition: 300ms;
 }
 
-svg:hover {
+header svg:hover {
     stroke: #ffcc23;
-}
-
-svg path {
-    
 }
 
 header ul {
@@ -88,7 +85,17 @@ header ul {
 #arrow {
     font-size: 2rem;
     cursor: pointer;
+    animation: setinha 1.5s ease infinite;
 }
+
+    @keyframes setinha {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, +5px);
+        }
+    }
 
 #animation {
     transition: 300ms;
@@ -118,7 +125,7 @@ header ul {
 
 .form input {
     width: 50%;
-    padding: 4px 8px;
+    padding: 8px 8px;
     border: none;
     border-radius: 8px 0px 0px 8px;
     font-size: 0.8rem;
@@ -130,7 +137,7 @@ header ul {
     font-size: 0.8rem;
 
     width: 16%;
-    padding: 4px 8px;
+    padding: 8px 8px;
     border-radius: 0px 8px 8px 0px;
     margin-left: -5px;
     background: linear-gradient(to right, #ff7220 50%, #ffcc23 50%);
