@@ -16,7 +16,7 @@ function validaCPF(cpf) {
         console.log(soma);
 
         // Validação do primeiro dígito
-        let resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
+        const resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
 
         if(resultado != digitos.charAt(0)) {
             return false;
@@ -37,14 +37,14 @@ function validaCPF(cpf) {
 }
 
 function validacao() {
-    let cpf = document.getElementById('cpf_digitado').value;
+    const cpf = document.getElementById('cpf_digitado').value;
      /* console.log(cpf); */
 
     document.getElementById('success').style.display = 'none';
     document.getElementById('error').style.display = 'none';
 
 
-    let resultadoValidacao = validaCPF(cpf);
+    const resultadoValidacao = validaCPF(cpf);
 
     if (resultadoValidacao) {
         document.getElementById('success').style.display = 'block';
