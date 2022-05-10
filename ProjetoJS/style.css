@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.formulario {
+    margin-top: 5%;
+}
+
+#success,
+#error {
+    display: none;
+}
